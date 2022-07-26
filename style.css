@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400 & family= Roboto & display=trocar');
+
+
+:root{
+    --color1: #4C4C4C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background-color:  #0F1F27  ;
+  }
+
+h1{
+    font-size: 3.4em;
+    font-weight: 600;
+   
+}
+
+h2{
+    text-align: center;
+}
+
+nav{
+    top:0;
+    left:0;
+    width:100%;
+    height:100px;
+    padding:10px 90px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,0.6);
+    border-bottom:1px solid #fff;
+}
+nav .logo{
+    padding:22px 20px;
+    height:80px;
+    float:left;
+    font-size:24px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+nav ul{
+    list-style:none;
+    float:right;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+nav ul li a{
+    line-height:80px;
+    color:#fff;
+    padding:12px 30px;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+nav ul li a:hover{
+    background:rgba(0,0,0,0.7);
+    border-radius:6px;
+}
+
+.perfil{
+    float: right ;
+    border-radius: 100%;
+    width: 320px;
+    height: 305px;
+    margin: 2%;
+}
+
+.descrisão-p{
+  margin: 100px;
+  padding: 10px 50px;
+  color: white;
+  grid-area: paragrafo;
+  text-align: center; 
+
+}
+
+.h2-descrião{
+  font-size: 40px;
+  font-family: sans-serif;
+  padding: 130px;
+  grid-area: titulo;
+}
+
+
+.rick{
+  grid-area: img;
+  justify-content: center;
+  margin-top: -70px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+.descrisão1{
+color: #fff;
+font-size: 25px;
+display: grid;
+grid-template-areas:"titulo titulo" "img paragrafo";
+}
+
+.bemvindo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr); 
+  margin: 100px;
+  padding: 10px 50px;
+  color: white;
+}
+
+.bemvindo-div1 {
+  padding: 80px 0px;
+  width: max-content;
+  color: white;
+
+}
+
+.bemvindo-div1 h1 {
+  margin-top: 90px;
+  font-size: 80px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 25px;
+  }
+
+  #projects{
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+  }
+  
+  #projects .container{
+    width: 1024px;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0, 0.2);
+    background-color: rgba(0,0,0, 0.2);
+    box-shadow: 20px 20px 50px rgba(0,0,0, 0.4);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+  
+  #projects .container .project{
+    width: 300px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+  }
+  
+  #projects .container .project img{
+    width: 100%;
+    height: 50%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+  }
+  
+  #projects .container .project .title{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #projects .container .project p{
+    font-size: 0.8em;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  #projects .container .project:hover{
+    bottom: 5px;
+    transition: bottom .3s linear;
+  }
+
+  #contact{
+    padding: 50px 50px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-block {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
